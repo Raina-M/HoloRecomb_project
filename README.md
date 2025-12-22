@@ -1,0 +1,1 @@
+The repository keeps all custom scripts that used in the manuscript of "Holocentric karyotype plasticity alters recombination through changes in synapsis and chromatin configuration". Reference of the article will be added once DOI is available.
