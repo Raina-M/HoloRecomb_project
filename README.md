@@ -1,1 +1,3 @@
 The repository keeps all custom scripts that used in the manuscript of "Holocentric karyotype plasticity alters recombination through changes in synapsis and chromatin configuration". Reference of the article will be added once DOI is available.
+
+HoloRECOMB_HiC: Hi-C contact-decay analyses (P(s) shoulder, contact-domain size, featureless null, library reproducibility, Tyba inter-array spacing, anther Hi-C), Fig. 4, Supplementary Fig. [HiC], Extended Data Fig. [TybaSpacing] and Supplementary Table [HiCQC] of the revised manuscript. See HoloRECOMB_HiC/README.md. Ps_slope_calculation contains the pipeline of the submitted version, which HoloRECOMB_HiC replaces.
