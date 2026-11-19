@@ -1,0 +1,19 @@
+chr	end	cls	mean_CO_terminal20	telomere_array_bp	telomere_motif_bp_terminal20kb	ITS_n_1Mb	ITS_bp_1Mb	GC_1Mb	N_bp_1Mb	Tyba_n_1Mb	Tyba_kb_1Mb	TE_pct_1Mb	genes_n_1Mb	otherTR_1Mb	ITS_n_5Mb	ITS_bp_5Mb	GC_5Mb	N_bp_5Mb	Tyba_n_5Mb	Tyba_kb_5Mb	TE_pct_5Mb	genes_n_5Mb	otherTR_5Mb
+1	start	conserved	1.14	2800	2132	0	0	35.34	100	2	33.7	9.7	119	-	0	0	34.45	100	19	306.1	12.9	463	-
+1	end	terminal rearrangement	2.73	0	25	0	0	35.73	0	2	69.5	13.1	91	-	0	0	34.69	100	20	328.3	13.1	413	-
+2	start	fission-derived	1.82	2500	2184	0	0	34.49	0	5	50.3	16.3	74	-	0	0	34.26	0	20	295.7	10.9	398	-
+2	end	conserved	0.85	1700	1443	0	0	36.05	0	4	62.6	12.2	101	-	0	0	34.39	0	20	263.2	11.5	419	-
+3	start	terminal rearrangement	0.28	1600	1389	0	0	35.14	0	4	83.0	15.5	85	-	0	0	34.52	0	17	280.5	13.7	424	-
+3	end	fission-derived	2.5	0	174	0	0	46.76	0	2	24.6	15.3	29	-	0	0	37.06	0	16	283.3	11.2	303	TRC_5
+4	start	conserved	0.63	1900	1784	0	0	34.7	0	4	46.7	12.8	117	-	0	0	34.46	0	22	321.0	10.5	483	-
+4	end	fission-derived	3.81	3200	2625	0	0	36.52	0	4	111.7	12.1	85	-	0	0	34.75	0	23	361.3	10.8	432	-
+5	start	terminal rearrangement	4.5	1800	1748	0	0	34.03	0	3	47.1	9.8	75	-	0	0	34.24	0	21	338.9	10.0	443	-
+5	end	conserved	0.51	2900	2500	0	0	34.54	0	4	70.4	8.9	91	-	1	35	34.42	0	20	311.7	12.2	461	-
+6	start	fission-derived	4.47	0	1664	5	609	35.16	0	2	20.5	14.7	86	-	5	609	34.48	0	18	366.1	11.7	413	-
+6	end	conserved	0.41	700	2635	9	1050	35.03	0	5	52.6	12.3	87	-	9	1050	34.45	0	19	237.9	20.2	366	TRC_3;TRC_4;TRC_6;TRC_8
+7	start	conserved	1.04	0	13	0	0	35.38	0	4	50.2	12.9	93	-	0	0	34.43	0	21	352.1	12.3	386	TRC_3;TRC_9
+7	end	fission-derived	2.95	2200	1856	0	0	35.43	0	3	52.5	14.5	80	-	0	0	34.09	100	20	348.0	10.4	382	-
+8	start	fission-derived	4.1	3200	2480	0	0	34.96	0	4	73.1	11.0	92	-	0	0	34.36	0	23	343.2	10.0	415	-
+8	end	conserved	1.44	2800	2585	0	0	35.88	0	5	45.7	15.1	87	-	1	49	34.6	0	25	339.9	14.2	382	-
+9	start	fission-derived	4.97	2000	1403	0	0	34.54	0	8	150.4	11.0	65	-	0	0	34.26	0	24	488.4	9.1	400	-
+9	end	terminal rearrangement	0.83	3900	2704	0	0	34.52	0	4	73.7	15.7	85	-	0	0	34.41	0	22	372.0	17.7	423	-

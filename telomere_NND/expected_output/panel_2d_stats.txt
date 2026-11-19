@@ -1,0 +1,11 @@
+LMM log(normalised NND) ~ group + (1|species): irregular/distal ratio 1.28 (95% CI 1.09-1.51), P = 0.0031; n nuclei = 121, species = 6
+                   count  median
+species                         
+R_breviuscula         35   0.078
+R_cephalotes           7   0.094
+R_ciliata             16   0.131
+R_colorata            23   0.123
+R_corymbosa           10   0.128
+R_holoschoenoides     12   0.136
+R_nervosa             18   0.124
+R_pubera              22   0.104

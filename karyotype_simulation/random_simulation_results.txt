@@ -1,0 +1,45 @@
+#!bin/bash
+
+# Change strategy of forcing the same genome sizes (in both fission and fusion simulation): when the fragment total length is smaller than the target genome, add a random number to each fragment, and the sum of these random number equals to the length difference between the fragment total length and the target genome length. Similarly, when the fragment total length is greater than the target genome, minus a random number to each fragment, and the sum of these random number equals to the length difference between the fragment total length and the target genome length.
+
+
+# run simulation for all pairs of species
+
+# R. radicans -> R. cephalotes
+Running FISSION-dominated simulation
+Observed CVCL: 0.17997892118421938
+Mean simulated CVCL: 0.7717904664404892
+SD simulated CVCL: 0.15574977418842378
+Z-score of observed CVCL: -3.7997586085762465
+
+# R. cephalotes -> R. alba
+Running FISSION-dominated simulation
+Observed CVCL: 0.2080166690842846
+Mean simulated CVCL: 0.7437249044239727
+SD simulated CVCL: 0.12531205416161756
+Z-score of observed CVCL: -4.274993646251892
+
+# R. alba -> R. rugosa
+Running FISSION-dominated simulation
+Observed CVCL: 0.16191001874770827
+Mean simulated CVCL: 0.5608886598695844
+SD simulated CVCL: 0.08558027088582577
+Z-score of observed CVCL: -4.6620399420581515
+
+# R. holoschoenoides -> R. corymbosa
+Running FISSION-dominated simulation
+Observed CVCL: 0.20841655301390757
+Mean simulated CVCL: 0.7426246698112979
+SD simulated CVCL: 0.2103566753351773
+Z-score of observed CVCL: -2.5395348920883825
+
+# fuison events:
+
+# R. filiformis -> R. austrobradiliensis
+Running FUSION-only simulation
+Observed CVCL: 0.22243528470924964
+Mean simulated CVCL: 0.42446902911574996
+SD simulated CVCL: 0.19442801152527128
+Z-score of observed CVCL: -1.0391185036639665
+
+

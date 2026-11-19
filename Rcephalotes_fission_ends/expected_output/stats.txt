@@ -1,0 +1,17 @@
+Ends: 8 rearrangement-derived (terminal 20% with >=30% sequence syntenic to internal R. breviuscula positions; fraction 0.43-1.0 vs <= 0.22 for other ends), of which 7 fission-derived;, 4 terminal rearrangement, 7 conserved
+Rearrangement-derived ends carrying the chromosome's highest CO rate: 8/8; binomial (p=0.5, one-sided) P = 0.0039
+Paired (same chromosome) mean CO rate in terminal 20%%: rearrangement-derived vs opposite end: chr2 1.82 vs 0.85, chr3 2.5 vs 0.28, chr4 3.81 vs 0.63, chr5 4.5 vs 0.51, chr6 4.47 vs 0.41, chr7 2.95 vs 1.04, chr8 4.1 vs 1.44, chr9 4.97 vs 0.83
+Wilcoxon signed-rank (one-sided) mean: P = 0.0039; max: P = 0.0039
+Median terminal mean rate: rearrangement-derived 3.96, other 0.84, conserved 0.85 cM/Mb
+Mann-Whitney (one-sided) rearrangement-derived vs all other ends: P = 0.0001; vs conserved: P = 0.0002
+Spearman, fraction of terminal 20% syntenic to internal R. breviuscula positions vs terminal mean CO rate (18 ends): rho = 0.67, P = 0.0025
+Distance of dominant peak from rearrangement-derived end: 3.1 to 6.9 Mb (median 3.9)
+chr1 peak 4.78 cM/Mb at 42.0 Mb (4.6 Mb from the terminal rearrangement end) -> R. breviuscula chr5 65.1 Mb, 1.06 cM/Mb (chromosome mean 0.63)
+chr2 peak 5.33 cM/Mb at 6.9 Mb (6.9 Mb from the fission-derived end) -> R. breviuscula chr5 28.9 Mb, 0.26 cM/Mb (chromosome mean 0.63)
+chr3 peak 4.75 cM/Mb at 31.3 Mb (4.6 Mb from the fission-derived end) -> R. breviuscula chr1 57.3 Mb, 0.25 cM/Mb (chromosome mean 0.59)
+chr4 peak 6.85 cM/Mb at 29.3 Mb (3.5 Mb from the fission-derived end) -> R. breviuscula chr2 35.7 Mb, 0.27 cM/Mb (chromosome mean 0.67)
+chr5 peak 9.05 cM/Mb at 4.1 Mb (4.1 Mb from the terminal rearrangement end) -> R. breviuscula chr4 33.7 Mb, 0.13 cM/Mb (chromosome mean 0.71)
+chr6 peak 7.06 cM/Mb at 3.1 Mb (3.1 Mb from the fission-derived end) -> R. breviuscula chr2 43.6 Mb, 0.56 cM/Mb (chromosome mean 0.67)
+chr7 peak 6.73 cM/Mb at 26.1 Mb (4.0 Mb from the fission-derived end) -> R. breviuscula chr3 28.2 Mb, 0.43 cM/Mb (chromosome mean 0.81)
+chr8 peak 7.32 cM/Mb at 3.9 Mb (3.9 Mb from the fission-derived end) -> R. breviuscula chr3 42.5 Mb, 0.32 cM/Mb (chromosome mean 0.81)
+chr9 peak 9.25 cM/Mb at 3.9 Mb (3.9 Mb from the fission-derived end) -> R. breviuscula chr1 70.5 Mb, 0.49 cM/Mb (chromosome mean 0.59)

@@ -1,0 +1,16 @@
+Chromosomes: 39; species: 7
+R. cephalotes: n = 9, mean log2 DCR = 1.73 (range 0.53 to 2.34); k-means clusters: ['distal-biased']
+R. breviuscula: n = 5, mean log2 DCR = 1.25 (range 0.48 to 1.89); k-means clusters: ['distal-biased']
+R. pubera: n = 5, mean log2 DCR = 2.55 (range 0.85 to 3.98); k-means clusters: ['distal-biased']
+R. nervosa: n = 5, mean log2 DCR = -0.39 (range -1.79 to 0.29); k-means clusters: ['irregular']
+R. ciliata: n = 5, mean log2 DCR = -0.69 (range -1.62 to 0.05); k-means clusters: ['irregular']
+R. colorata: n = 5, mean log2 DCR = -0.75 (range -1.90 to 0.05); k-means clusters: ['irregular']
+R. barbata: n = 5, mean log2 DCR = -1.03 (range -1.51 to -0.43); k-means clusters: ['irregular']
+PCA variance explained: PC1 56.7%, PC2 21.3%
+k-means assigns all chromosomes of each species to one cluster: True
+Distal-biased cluster: ['R. breviuscula', 'R. cephalotes', 'R. pubera']; chromosome log2 DCR 0.48 to 3.98
+Irregular cluster: ['R. barbata', 'R. ciliata', 'R. colorata', 'R. nervosa']; chromosome log2 DCR -1.90 to 0.29
+Gap between clusters in chromosome log2 DCR: 0.19
+Top species bipartitions by |difference in mean log2 DCR|: R. breviuscula+R. cephalotes+R. pubera 2.53; R. cephalotes+R. pubera 2.34; R. pubera 2.33 (of 63)
+Permutation test (chromosome labels, 100000 permutations): observed difference 2.53, P = 1.0e-05
+Sensitivity, k-means on mean-scaled profiles (amplitude retained): chromosomes assigned against their species group: ['R. cephalotes chr3']

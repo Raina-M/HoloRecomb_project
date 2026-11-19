@@ -1,0 +1,53 @@
+===== NND
+                   count  median   mean
+species                                
+R_breviuscula         35   0.762  0.933
+R_cephalotes           7   0.558  0.662
+R_ciliata             16   1.114  1.269
+R_colorata            23   1.072  1.067
+R_corymbosa           10   1.154  1.206
+R_holoschoenoides     12   1.390  1.351
+R_nervosa             18   1.687  1.612
+R_pubera              22   1.386  1.342
+Kruskal-Wallis H=33.79 P=1.88e-05
+  R_breviuscula vs R_nervosa: BH P=0.0005
+  R_cephalotes vs R_nervosa: BH P=0.0005
+  R_cephalotes vs R_pubera: BH P=0.0038
+  R_breviuscula vs R_pubera: BH P=0.0098
+  R_colorata vs R_nervosa: BH P=0.0320
+  R_colorata vs R_pubera: BH P=0.2358
+  R_corymbosa vs R_nervosa: BH P=0.2358
+  R_ciliata vs R_nervosa: BH P=0.3476
+  R_nervosa vs R_pubera: BH P=0.3613
+  R_corymbosa vs R_pubera: BH P=0.6613
+  R_holoschoenoides vs R_nervosa: BH P=0.6613
+  R_holoschoenoides vs R_pubera: BH P=0.7248
+  R_ciliata vs R_pubera: BH P=0.8579
+===== norm
+                   count  median   mean
+species                                
+R_breviuscula         35   0.078  0.096
+R_cephalotes           7   0.094  0.111
+R_ciliata             16   0.131  0.149
+R_colorata            23   0.123  0.122
+R_corymbosa           10   0.128  0.134
+R_holoschoenoides     12   0.136  0.132
+R_nervosa             18   0.124  0.118
+R_pubera              22   0.104  0.101
+Kruskal-Wallis H=21.33 P=3.31e-03
+  R_ciliata vs R_pubera: BH P=0.0496
+  R_holoschoenoides vs R_pubera: BH P=0.2062
+  R_breviuscula vs R_nervosa: BH P=0.2346
+  R_ciliata vs R_nervosa: BH P=0.2908
+  R_corymbosa vs R_pubera: BH P=0.2908
+  R_colorata vs R_pubera: BH P=0.3082
+  R_holoschoenoides vs R_nervosa: BH P=0.5553
+  R_nervosa vs R_pubera: BH P=0.5553
+  R_breviuscula vs R_pubera: BH P=0.6579
+  R_cephalotes vs R_pubera: BH P=0.6579
+  R_corymbosa vs R_nervosa: BH P=0.6579
+  R_colorata vs R_nervosa: BH P=0.7465
+  R_cephalotes vs R_nervosa: BH P=0.9763
+mean nucleus area {'R_breviuscula': 94.9, 'R_cephalotes': 35.3, 'R_ciliata': 72.1, 'R_colorata': 76.4, 'R_corymbosa': 81.1, 'R_holoschoenoides': 105.2, 'R_nervosa': 186.3, 'R_pubera': 176.8}
+NND R. pubera vs R. breviuscula+R. cephalotes P=0.001 | vs R. nervosa+R. ciliata+R. colorata P=0.714
+norm R. pubera vs R. breviuscula+R. cephalotes P=0.557 | vs R. nervosa+R. ciliata+R. colorata P=0.018

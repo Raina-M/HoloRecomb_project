@@ -1,0 +1,28 @@
+== OLS log10(CO rate) ~ log10(chromosome size)
+All 39 chromosomes (corrected): slope -1.312 ± 0.071 s.e., adj. R2 = 0.899, P = 3.38e-20, n = 39
+All 39 chromosomes, original script (R. breviuscula divided by R. barbata sizes): slope -1.300 ± 0.075 s.e., adj. R2 = 0.887, P = 2.40e-19, n = 39
+Excluding R. pubera (34 chromosomes): slope -0.944 ± 0.035 s.e., adj. R2 = 0.955, P = 2.20e-23, n = 34
+Including the two MLH1-based genome-wide points (as drawn in submitted Fig. 3b): slope -0.868 ± 0.108 s.e., adj. R2 = 0.614, P = 8.39e-10, n = 41
+
+== Linear mixed model, species random intercept (REML)
+slope -1.301 ± 0.133 s.e., z = -9.76, P = 1.68e-22; species variance = 8.43e-03, residual variance = 0.0092
+excluding R. pubera: slope -0.926 ± 0.058 s.e., P = 1.15e-56
+
+== Within-species (variables centred on species means)
+pooled within-species slope -1.056 ± 0.257 s.e., t(31) = -4.11, P = 2.66e-04
+(equivalent fixed-effects model: slope -1.056, P = 2.66e-04)
+
+== Per species
+      species  n_chromosomes  size_CV_pct  spearman_rho  spearman_P  ols_slope  ols_slope_se  ols_P
+    R_barbata              5         13.3         -0.70      0.1881      -0.55          0.17 0.0485
+R_breviuscula              5         13.8         -0.50      0.3910      -0.59          0.38 0.2169
+ R_cephalotes              9         18.0         -0.93      0.0002      -0.82          0.14 0.0007
+    R_ciliata              5         15.0         -0.20      0.7471      -0.35          0.24 0.2424
+   R_colorata              5         11.2         -0.50      0.3910      -1.51          0.20 0.0049
+    R_nervosa              5         11.9         -0.10      0.8729      -0.35          0.70 0.6479
+     R_pubera              5         23.3         -0.70      0.1881      -1.94          1.29 0.2308
+
+MLH1-based genome-wide points (plotted, not fitted):
+      species       size  co  cells  co_rate
+     R_pubera 1472673118 639     84    0.258
+R_breviuscula  368174147 921    152    0.823

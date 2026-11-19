@@ -1,0 +1,20 @@
+Sequence features at R. cephalotes chromosome ends (hap1 assembly; ceph_end_sequence_features.tsv)
+7 fission-derived vs 7 conserved ends; two-sided tests; 11 features tested (BH correction across features).
+
+Feature (median fission vs conserved)      MWU P   paired P  Spearman rho vs terminal CO (18 ends)
+Telomeric array at end, bp (2200 vs 1900)   0.80    0.94      +0.01 (P 0.96)
+Telomere motif bp, terminal 20 kb           0.71    0.81      -0.18 (P 0.47)
+Tyba kb, terminal 1 Mb (52.5 vs 50.2)       0.62    0.69      -0.05
+Tyba kb, terminal 5 Mb (348 vs 312)         0.13    0.08      +0.59 (P 0.010; BH q 0.055)
+TE %, terminal 1 Mb (14.5 vs 12.3)          0.37    0.94      -0.19
+TE %, terminal 5 Mb (10.8 vs 12.3)          0.011   0.031     -0.68 (P 0.002; BH q 0.022)
+Genes, terminal 1 Mb (80 vs 93)             0.007   0.047     -0.42 (P 0.08)
+Genes, terminal 5 Mb (400 vs 419)           0.41    0.47      -0.16
+GC %, terminal 1 Mb / 5 Mb                  1.0/0.61          ns
+Interstitial telomeric repeats, 5 Mb        0.34    0.50      ns (only chr6 both ends, chr5 end, chr8 end)
+None of the MWU or paired P values survives BH correction across the 11 features.
+
+Individual observations
+- 45S rDNA: the only 45S rDNA array in the assembly (51 copies of an 18S probe; GC ~61%) occupies the last ~420 kb of chr3 (35.53-35.95 Mb), a fission-derived end. The assembly ends inside the array, without a telomere.
+- Ends without an assembled terminal telomeric array: chr1 end (terminal rearrangement), chr3 end (fission-derived, rDNA), chr7 start (conserved); chr6 start (fission-derived) carries a degenerate C-rich telomere-like array (CCCCCCA/CCCTAA variants, ~1.7 kb of motif in the terminal 20 kb).
+- Assembled telomeric arrays are 1.6-3.9 kb at all other ends; HiFi assemblies truncate telomeres, so these values do not measure telomere length.
