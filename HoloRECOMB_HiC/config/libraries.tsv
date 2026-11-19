@@ -1,0 +1,33 @@
+library_id	species	replicate	tissue	protocol	reference	hic_file	status	note	tyba_annotation
+R_alba_rep1	alba	rep1	leaf	Arima Hi-C	R. alba haploid assembly	R_alba/rep1/inter_30.hic	ok		Rhync_alba.chr
+R_austrobrasiliensis_rep1	austrobrasiliensis	rep1	leaf	Arima Hi-C	R. austrobrasiliensis, six pseudohaplotypes	R_austrobrasiliensis/rep1/inter_30.hic	ok	hexaploid; 18 chromosomes (6 x 3)	Rhync_austrobrasiliensis_6344D.hic.hap
+R_barbata_rep1	barbata	rep1	leaf	Arima Hi-C	R. barbata haplotype 1	R_barbata/rep1/inter_30.hic	ok	Hi-C map and Tyba annotation from different assemblies	Rhync_barbata_hap1
+R_breviuscula_rep1	breviuscula	rep1	leaf	Arima Hi-C	R. breviuscula haplotype 1	R_breviuscula/rep1/inter_30.hic	ok		Rhync_breviuscula.hap1
+R_breviuscula_rep2	breviuscula	rep2	leaf	Arima Hi-C	R. breviuscula haplotype 1	R_breviuscula/rep2/inter_30.hic	ok		Rhync_breviuscula.hap1
+R_cephalotes_rep1	cephalotes	rep1	leaf	Arima Hi-C	R. cephalotes haplotype 1	R_cephalotes/rep1/inter_30.hic	ok		Rhync_cephalotes.hap1
+R_cephalotes_rep2	cephalotes	rep2	leaf	Arima Hi-C	R. cephalotes haplotype 1	R_cephalotes/rep2/inter_30.hic	ok		Rhync_cephalotes.hap1
+R_ciliata_rep1	ciliata	rep1	leaf	Arima Hi-C	R. ciliata haplotype 1	R_ciliata/rep1/inter_30.hic	ok		Rhync_ciliata_6041A.hic.hap1
+R_ciliata_rep2	ciliata	rep2	leaf	Arima Hi-C	R. ciliata haplotype 1	R_ciliata/rep2/inter_30.hic	ok		Rhync_ciliata_6041A.hic.hap1
+R_colorata_rep1	colorata	rep1	leaf	Arima Hi-C	R. colorata haplotype 1	R_colorata/rep1/inter_30.hic	ok		Rhync_colorata.hap1
+R_corymbosa_rep1	corymbosa	rep1	leaf	Arima Hi-C	R. corymbosa haplotype 1	R_corymbosa/rep1/inter_30.hic	ok		Rhync_corymbosa_6179D.asm.hic.FINAL.hap1
+R_corymbosa_rep2	corymbosa	rep2	leaf	Arima Hi-C	R. corymbosa haplotype 1	R_corymbosa/rep2/inter_30.hic	ok		Rhync_corymbosa_6179D.asm.hic.FINAL.hap1
+R_filiformis_rep1	filiformis	rep1	leaf	Arima Hi-C	R. filiformis haplotype 1	R_filiformis/rep1/inter_30.hic	ok	only 16 Tyba arrays annotated	Rhync_filiformis_5519G.hap1
+R_gaudichaudii_rep1	gaudichaudii	rep1	leaf	Arima Hi-C	R. gaudichaudii haplotype 3	R_gaudichaudii/rep1/inter_30.hic	ok	autotriploid; one haplotype	Rhync_gaudichaudii.chr.h3
+R_holoschoenoides_rep1	holoschoenoides	rep1	leaf	Arima Hi-C	R. holoschoenoides haplotype 1	R_holoschoenoides/rep1/inter_30.hic	ok		Rhync_holoschoenoides_hap1
+R_holoschoenoides_rep2	holoschoenoides	rep2	leaf	Arima Hi-C	R. holoschoenoides haplotype 1	R_holoschoenoides/rep2/inter_30.hic	ok		Rhync_holoschoenoides_hap1
+R_nervosa_rep1	nervosa	rep1	leaf	Arima Hi-C	R. nervosa haplotype 1	R_nervosa/rep1/inter_30.hic	ok		Rhync_nervosa_6321B.asm.hic.hap1
+R_nervosa_rep2	nervosa	rep2	leaf	Arima Hi-C	R. nervosa haplotype 1	R_nervosa/rep2/inter_30.hic	ok		Rhync_nervosa_6321B.asm.hic.hap1
+R_pubera_rep1	pubera	rep1	leaf	Arima Hi-C	R. pubera haploid assembly	R_pubera/rep1/inter_30.hic	ok	unplaced scaffolds ignored	Rhync_pubera
+R_pubera_rep2	pubera	rep2	leaf	Arima Hi-C	R. pubera haploid assembly	R_pubera/rep2/inter_30.hic	ok		Rhync_pubera
+R_radicans_rep1	radicans	rep1	leaf	Arima Hi-C	R. radicans haploid assembly	R_radicans/rep1/inter_30.hic	ok		Rhync_radicans
+R_radicans_rep2	radicans	rep2	leaf	Arima Hi-C	R. radicans haploid assembly	R_radicans/rep2/inter_30.hic	ok		Rhync_radicans
+R_ridleyi_rep1	ridleyi	rep1	leaf	Arima Hi-C	R. ridleyi haplotype 1	R_ridleyi/rep1/inter_30.hic	ok		Rhync_ridleyi.asm.hic.hap1
+R_ridleyi_rep2	ridleyi	rep2	leaf	Arima Hi-C	R. ridleyi haplotype 1	R_ridleyi/rep2/inter_30.hic	excluded	85.5% of read pairs with one or both reads unmapped	Rhync_ridleyi.asm.hic.hap1
+R_riparia_rep1	riparia	rep1	leaf	Arima Hi-C	R. riparia haplotype 1	R_riparia/rep1/inter_30.hic	ok		Rhync_riparia_5519C.hap1
+R_rugosa_rep1	rugosa	rep1	leaf	Arima Hi-C	R. rugosa haploid assembly	R_rugosa/rep1/inter_30.hic	ok		Rhync_rugosa
+R_rugosa_rep2	rugosa	rep2	leaf	Arima Hi-C	R. rugosa haploid assembly	R_rugosa/rep2/inter_30.hic	ok		Rhync_rugosa
+R_tenerrima_rep1	tenerrima	rep1	leaf	Arima Hi-C	R. tenerrima, both subgenomes	R_tenerrima/rep1/inter_30.hic	ok	allotetraploid; 10 chromosomes (2 x 5)	Rhync_tenerrima
+R_tenuis_rep1	tenuis	rep1	leaf	Arima Hi-C	R. tenuis reference accession, Chr1 haplotype 2 and Chr2 haplotype 1	R_tenuis/rep1/inter_30.hic	ok		Rhync_tenuis.hap
+R_tenuis_rep2	tenuis	rep2	leaf	Arima Hi-C	R. tenuis reference accession, Chr1 haplotype 2 and Chr2 haplotype 1	R_tenuis/rep2/inter_30.hic	ok		Rhync_tenuis.hap
+R_watsonii_rep1	watsonii	rep1	leaf	Arima Hi-C	R. watsonii haploid assembly	R_watsonii/rep1/inter_30.hic	ok		Rhync_watsonii
+R_watsonii_rep2	watsonii	rep2	leaf	Arima Hi-C	R. watsonii haploid assembly	R_watsonii/rep2/inter_30.hic	ok		Rhync_watsonii
