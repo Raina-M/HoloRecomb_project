@@ -2,7 +2,7 @@
 
 Code for the Hi-C contact-decay analyses in Zhang, Steckenborn, Castellani *et al.*, "A holocentric pangenome links karyotype
 evolution to meiotic recombination" (Marques Lab, Max Planck Institute for Plant Breeding Research). It produces Fig. 4 and its
-statistics, Supplementary Fig. [HiC], Extended Data Fig. [TybaSpacing], Supplementary Table [HiCQC] and the Hi-C figures of
+statistics, Supplementary Fig. 12, Supplementary Fig. 13, Supplementary Dataset 4 and the Hi-C figures of
 the response to referees.
 
 ## What is measured
@@ -33,12 +33,12 @@ analysis/01_shoulders.py    shoulder per chromosome for all libraries, featurele
 analysis/02_fig4c.py        Fig. 4c statistics (Spearman, log-log OLS, linear mixed model, within-species slope)
 analysis/03_robustness.py   analysis settings, leave-one-species-out, depth, Poisson thinning
 analysis/04_replicates.py   agreement between the two libraries of a species, HiCRep SCC, Fig. 4c with the other library
-analysis/05_tyba_spacing.py Tyba inter-array spacing versus chromosome size and shoulder (Extended Data Fig. [TybaSpacing])
+analysis/05_tyba_spacing.py Tyba inter-array spacing versus chromosome size and shoulder (Supplementary Fig. 13)
 anther/                     Hi-C from anthers at meiotic stages: enrichment over random ligation, background-corrected P(s)
-analysis/06_suppl_fig_hic.py Supplementary Fig. [HiC]
+analysis/06_suppl_fig_hic.py Supplementary Fig. 12
 analysis/07_rugosa_diagnostic.py R. rugosa: why the shoulder is not resolved
 analysis/08_fig4.py         Fig. 4 (a-e), statistics and source data
-analysis/09_supplementary_table.py Supplementary Table [HiCQC] (xlsx)
+analysis/09_supplementary_table.py Supplementary Dataset 4 (xlsx)
 response_letter/            figures and tests used only in the response to referees
 run_all.sh                  runs everything after extraction
 ```

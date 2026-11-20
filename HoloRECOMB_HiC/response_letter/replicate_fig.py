@@ -1,4 +1,4 @@
-"""Response letter only. Response Fig. [HiC replicates]: reproducibility of somatic Hi-C contact decay between two Arima
+"""Response letter only. Response Fig. 1: reproducibility of somatic Hi-C contact decay between two Arima
 libraries from leaf tissue. Run after analysis/01-04. Output: results/response_letter/Response_Fig_HiC_replicates.{pdf,svg,png}"""
 import os, sys, re, numpy as np, pandas as pd
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))

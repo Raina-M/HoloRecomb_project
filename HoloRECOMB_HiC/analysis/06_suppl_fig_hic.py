@@ -1,4 +1,4 @@
-"""Step 6. Supplementary Fig. [HiC]
+"""Step 6. Supplementary Fig. 12
  (a) local slope of P(s), observed and featureless null, five species; (b) five R. breviuscula libraries (two Arima Hi-C,
  three Omni-C); (c) per-chromosome shoulder against chromosome size; (d) shoulder of the two libraries of each species;
  (e) anther Hi-C enrichment over random ligation; (f, g) anther (background-corrected) and somatic local slope.

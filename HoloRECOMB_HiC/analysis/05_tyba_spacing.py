@@ -1,4 +1,4 @@
-"""Step 5. Extended Data Fig. [TybaSpacing]: Tyba inter-array spacing (distance between midpoints of consecutive arrays),
+"""Step 5. Supplementary Fig. 13: Tyba inter-array spacing (distance between midpoints of consecutive arrays),
 mean chromosome size and P(s) shoulder position, per species and per chromosome.
 Inputs : data/tyba/tyba_arrays_merged10kb.tsv (Tyba monomer runs < 10 kb apart merged; haplotype used for Hi-C, see
          config/libraries.tsv, column tyba_annotation); results/species_shoulder.tsv, chromosome_shoulder.tsv (step 1)

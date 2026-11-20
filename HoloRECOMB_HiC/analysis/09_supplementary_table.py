@@ -1,4 +1,4 @@
-"""Step 9. Supplementary Table [HiCQC]: (a) all Hi-C libraries from leaf tissue, (b) anther Hi-C libraries, (c) P(s) shoulder
+"""Step 9. Supplementary Dataset 4: (a) all Hi-C libraries from leaf tissue, (b) anther Hi-C libraries, (c) P(s) shoulder
 of every chromosome of every leaf library. Run after steps 1-4 and anther/anther_hic.py.
 Output: results/Supplementary_Table_HiC_libraries.xlsx"""
 import os, sys, numpy as np, pandas as pd
@@ -51,9 +51,10 @@ for r in L.itertuples():
                  'yes' if r.low_depth else 'no', None if rp is None else rp.scc_median, None if rp is None else rp.scc_min, None if rp is None else rp.scc_max,
                  r.note if isinstance(r.note, str) else None])
 ws = wb.active; ws.title = 'a Leaf libraries'
-sheet(ws, 'Supplementary Table [HiCQC]a. Arima Hi-C libraries from leaf tissue: library statistics, depth, P(s) shoulder and reproducibility', H, rows,
+sheet(ws, 'Supplementary Dataset 4a. Hi-C libraries from leaf tissue (Arima Hi-C and Omni-C): library statistics, depth, P(s) shoulder and reproducibility', H, rows,
       widths={1: 18, 2: 22, 5: 34, 35: 40},
-      notes=['Juicer statistics from inter_30.hic (header statistics block); empty cells, not reported in the header. Contacts > 20 kb (VC_SQRT) and the P(s) shoulder were '
+      notes=['Library protocol: Omni-C (Dovetail) for R. alba, R. colorata and R. tenerrima (one library per species); Arima Hi-C for all other libraries. '
+             'Juicer statistics from inter_30.hic (header statistics block); empty cells, not reported in the header. Contacts > 20 kb (VC_SQRT) and the P(s) shoulder were '
              'calculated from intrachromosomal contacts at 5-kb resolution (Methods). Fig. 4c uses, for each species, the library with most intrachromosomal contacts > 20 kb '
              'among those that passed QC. Featureless null: single power law fitted to each chromosome, with the depth, chromosome length and valid bins of the library, '
              '3 simulations per chromosome. SCC, stratum-adjusted correlation coefficient (HiCRep) of 100-kb matrices at 0.1-5 Mb between the two libraries of a species.'])
@@ -72,13 +73,13 @@ Hb = ['Species', 'Tissue', 'Library protocol', 'Sequenced read pairs', 'Unique r
       'Random-ligation background (contacts per 5-kb pixel pair)', 'Observed 20-100 kb', 'Expected 20-100 kb', 'Observed/expected 20-100 kb', 'Observed 0.1-1 Mb',
       'Expected 0.1-1 Mb', 'Observed/expected 0.1-1 Mb', 'Observed 1-10 Mb', 'Expected 1-10 Mb', 'Observed/expected 1-10 Mb',
       'Chromosomes with resolved shoulder (background-corrected)', 'P(s) shoulder, pooled anther, background-corrected (Mb)', 'P(s) shoulder, pooled leaf (Mb)', 'Note']
-sheet(wb.create_sheet('b Anther libraries'), 'Supplementary Table [HiCQC]b. Arima Hi-C libraries from anthers at meiotic stages: library statistics and enrichment over random ligation',
+sheet(wb.create_sheet('b Anther libraries'), 'Supplementary Dataset 4b. Arima Hi-C libraries from anthers at meiotic stages: library statistics and enrichment over random ligation',
       Hb, rows, widths={1: 16, 2: 22, 25: 22, 28: 30},
       notes=['Expected contacts: random-ligation background (interchromosomal contacts per pixel pair) multiplied by the number of intrachromosomal pixel pairs in each distance class. '
              'Pooled shoulder: maximum of the local slope of P(s) between 0.3 Mb and 0.4 x mean chromosome length, all chromosomes pooled.'])
 # c: per chromosome
 rows = [['R. ' + r.species, f'{r.species} library {r.replicate[-1]}', r.chrom, r.chr_Mb, r.shoulder_Mb if np.isfinite(r.shoulder_Mb) else 'not resolved',
          'yes' if r.library_id in set(L[L.selected].library_id) else 'no'] for r in C.itertuples()]
-sheet(wb.create_sheet('c Per chromosome'), 'Supplementary Table [HiCQC]c. P(s) shoulder position of every chromosome of every leaf library',
+sheet(wb.create_sheet('c Per chromosome'), 'Supplementary Dataset 4c. P(s) shoulder position of every chromosome of every leaf library',
       ['Species', 'Library', 'Chromosome', 'Chromosome size (Mb)', 'P(s) shoulder (Mb)', 'Used in Fig. 4c'], rows, widths={1: 18, 2: 22, 3: 22})
 wb.save(results('Supplementary_Table_HiC_libraries.xlsx')); print('saved')
