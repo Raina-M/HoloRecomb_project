@@ -9,7 +9,7 @@ from matplotlib.lines import Line2D
 plt.rcParams.update({'font.family': ['Arial', 'Liberation Sans'], 'font.size': 6.5, 'pdf.fonttype': 42,
                      'svg.fonttype': 'none', 'axes.linewidth': 0.6,
                      'mathtext.fontset': 'custom', 'mathtext.rm': 'Liberation Sans', 'mathtext.it': 'Liberation Sans:italic'})
-MM = 1 / 25.4; W, H = 180, 126
+MM = 1 / 25.4; W, H = 180, 129
 fig = plt.figure(figsize=(W * MM, H * MM))
 ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(H, 0); ax.axis('off')
 
@@ -33,14 +33,19 @@ SP = [  # name, 2n, haplotypes
 COLS = [('asm', 'Assembly', GEN), ('hicL', 'Leaf', CHR), ('hicR', 'Leaf, 2nd library', CHR),
         ('hicA', 'Anthers', CHR), ('co', 'CO map', REC), ('mlh', 'MLH1 foci', REC),
         ('cyt', 'Synapsis, telomeres', CYT), ('axis', 'Axis length', CYT), ('sim', 'Simulation', MOD)]
-HICL = ['R. alba', 'R. barbata', 'R. breviuscula', 'R. cephalotes', 'R. ciliata', 'R. colorata', 'R. corymbosa', 'R. filiformis',
-        'R. gaudichaudii', 'R. holoschoenoides', 'R. nervosa', 'R. pubera', 'R. radicans', 'R. ridleyi', 'R. tenuis', 'R. watsonii']
+HICL = ['R. alba', 'R. austrobrasiliensis', 'R. barbata', 'R. breviuscula', 'R. cephalotes', 'R. ciliata', 'R. colorata', 'R. corymbosa',
+        'R. filiformis', 'R. gaudichaudii', 'R. holoschoenoides', 'R. nervosa', 'R. pubera', 'R. radicans', 'R. ridleyi', 'R. riparia',
+        'R. tenerrima', 'R. tenuis', 'R. watsonii']
+OMNIC = ['R. alba', 'R. colorata', 'R. tenerrima']             # Omni-C; all other Hi-C libraries Arima Hi-C
 D = {s[0]: {} for s in SP}
 for s, *_ in SP: D[s]['asm'] = 'f'
 for s in HICL: D[s]['hicL'] = 'f'
+for s in OMNIC: D[s]['hicL'] = 'OC'
 D['R. rugosa']['hicL'] = 'o'                                   # shoulder not resolved
-for s in ['R. breviuscula', 'R. cephalotes', 'R. ciliata', 'R. corymbosa', 'R. radicans', 'R. tenuis', 'R. watsonii']: D[s]['hicR'] = 'f'
+for s in ['R. breviuscula', 'R. cephalotes', 'R. ciliata', 'R. corymbosa', 'R. holoschoenoides', 'R. nervosa', 'R. pubera', 'R. radicans',
+          'R. tenuis', 'R. watsonii']: D[s]['hicR'] = 'f'
 D['R. ridleyi']['hicR'] = 'o'                                  # library failed
+D['R. rugosa']['hicR'] = 'o'                                   # shoulder not resolved
 for s in ['R. corymbosa', 'R. radicans']: D[s]['hicA'] = 'f'
 D['R. cephalotes']['hicA'] = 'o'                               # no enrichment beyond 1 Mb
 for s in ['R. barbata', 'R. cephalotes', 'R. ciliata', 'R. colorata', 'R. nervosa']: D[s]['co'] = 'f'
@@ -82,12 +87,12 @@ for i, (s, kar, hap) in enumerate(SP):
             ax.add_patch(Circle((x, y), r, fc='white', ec=c, lw=0.8, zorder=3))
         else:
             ax.add_patch(Circle((x, y), r, fc=c, ec='none', zorder=3))
-            if v in ('p', 'F2'):
-                ax.text(x + 1.6, y - 1.1, '†' if v == 'p' else 'F$_2$', fontsize=5, ha='left', va='center', color=c)
+            if v in ('p', 'F2', 'OC'):
+                ax.text(x + 1.6, y - 1.1, {'p': '†', 'F2': 'F$_2$', 'OC': '*'}[v], fontsize=5, ha='left', va='center', color=c)
 yb = y0 + len(SP) * dy - 1.0
 ax.plot([x0, xc0 + 8 * dx + dx / 2], [yb, yb], color='k', lw=0.6)
 # totals
-TOT = {'asm': '20', 'hicL': '17', 'hicR': '8', 'hicA': '3', 'co': '7', 'mlh': '2', 'cyt': '8', 'axis': '6', 'sim': '6'}
+TOT = {'asm': '20', 'hicL': '20', 'hicR': '12', 'hicA': '3', 'co': '7', 'mlh': '2', 'cyt': '8', 'axis': '6', 'sim': '6'}
 yt = yb + 2.6
 ax.text(x0, yt, 'Total', ha='left', va='center', fontsize=6, fontweight='bold')
 ax.text(xh + 2.2, yt, '56', ha='center', va='center', fontsize=6, fontweight='bold')
@@ -99,7 +104,8 @@ ax.add_patch(Circle((x0 + 1.2, yk), r, fc='#4D4D4D', ec='none'))
 ax.text(x0 + 3.2, yk, 'used in the analyses', va='center', fontsize=5.6)
 ax.add_patch(Circle((x0 + 30.5, yk), r, fc='white', ec='#4D4D4D', lw=0.8))
 ax.text(x0 + 32.5, yk, 'generated, excluded (see Methods)', va='center', fontsize=5.6)
-ax.text(x0 + 70.0, yk, '†, published map;  F$_2$, F$_2$ genetic map', va='center', fontsize=5.6)
+ax.text(x0 + 66.0, yk, '†, published map;  F$_2$, F$_2$ genetic map', va='center', fontsize=5.6)
+ax.text(x0, yk + 3.6, '*, Omni-C library; all other Hi-C libraries, Arima Hi-C', va='center', fontsize=5.6)
 
 # ---------------- b, workflow ----------------
 XB = 125.5
@@ -117,7 +123,7 @@ rows = [
     ('Genome assembly and synteny', 'PacBio HiFi, Hi-C scaffolding; GENESPACE,\nsyngraph, AGORA; fission and fusion\njunctions, $\\it{Tyba}$ and TE overlap (Fig. 1)', GEN),
     ('Single-gamete CO maps', 'Pollen nuclei, scRNA-seq and scATAC-seq;\nCO landscapes, distal-to-central ratio,\nCO rate and interference (Figs. 2a, 3)', REC),
     ('Meiotic cytology', 'ZYP1, ASY1 and MLH1 immunostaining,\ntelomere FISH; synapsis initiation,\ntelomere clustering, axis length (Figs. 2, 4a,b)', CYT),
-    ('Hi-C contact decay', 'Leaf and anther libraries; P(s) shoulder\n(contact-domain size), replicates,\n$\\it{Tyba}$ inter-array spacing (Fig. 4c,d)', CHR),
+    ('Hi-C contact decay', 'Leaf (Arima Hi-C, Omni-C) and anther\n(Arima Hi-C) libraries; P(s) shoulder, two\nlibraries per species, $\\it{Tyba}$ spacing (Fig. 4c,d)', CHR),
     ('Polymer simulations', 'Companion study; simulated against\nmeasured axis length per Mb (Fig. 4e)', MOD),
 ]
 yb0, gap = 8.0, 3.2
